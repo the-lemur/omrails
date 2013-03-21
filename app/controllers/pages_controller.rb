@@ -3,5 +3,6 @@ class PagesController < ApplicationController
   end
 
   def about
+  	@body_class = 'about'
   end
 end
