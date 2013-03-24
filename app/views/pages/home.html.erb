@@ -1,11 +1,15 @@
-<div class="hero-unit">
-	<h1>Food Treasure</h1>
-	<h3>
-		A dish so delicious, yummy, om nom nom you’d love to
-		- bathe in it and whoop of joy?
-	</h3>
-	<p>
-		<%= link_to "Sign up to treasure!", "#", class: "btn btn-primary btn-large"  %>
-	</p>
-</div>
+<% if user_signed_in? %>
+	<h1>Welcome to Food Treasure!</h1>
+<% else %>
+	<div class="hero-unit">
+		<h1>Food Treasure</h1>
+		<h3>
+			A dish so delicious, yummy, om nom nom you’d love to
+			- bathe in it and whoop of joy?
+		</h3>
+		<p>
+			<%= link_to "Sign up to treasure!", new_user_registration_path, class: "btn btn-primary btn-large"  %>
+		</p>
+	</div>
+<% end %>
 
