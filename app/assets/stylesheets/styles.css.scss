@@ -5,9 +5,11 @@ $btnPrimaryBackground: purple;
 $navbarHeight: 45px;
 $bodyBackground: #1e1a1a;
 $heroUnitBackground: #ddd4dd;
+$textColor: #d6bee0;
 /*bcb1bc oder e0cee0 herounit
 /*$navbarBackgroundHighligh: white;
 $navbarBackground: gray;*/
+
 
 @import 'bootstrap';
 
@@ -15,7 +17,7 @@ body{
 	padding-top: 60px;
 }
 
-.about { color: #d6bee0;}
+.home { color: $grayDark;}
 /* Oder cec6c6 8e8d8d bfbfbf e0c0e0*/
 
 @import 'bootstrap-responsive';
