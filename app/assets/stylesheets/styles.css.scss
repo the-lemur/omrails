@@ -3,9 +3,14 @@ $baseFontFamily: Lato;
 
 $btnPrimaryBackground: purple;
 $navbarHeight: 45px;
-$bodyBackground: #1e1a1a;
+$bodyBackground: #282424;
+/*1e1a1a 282424 302b2b*/
 $heroUnitBackground: #ddd4dd;
 $textColor: #d6bee0;
+$navbarLinkColor: #aaa2aa;
+$navbarBackground: #110f0f;
+$navbarBackgroundHighlight: #110f0f;
+$navbarLinkColorHover: #c9c5c5;
 /*bcb1bc oder e0cee0 herounit
 /*$navbarBackgroundHighligh: white;
 $navbarBackground: gray;*/
@@ -31,6 +36,6 @@ body{
     margin-top: 50px;
     color: $grayLight;
     a{
-        color: #665e5e;
+        color: #666666;
     }
 }

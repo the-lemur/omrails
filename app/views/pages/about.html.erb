@@ -1,17 +1,37 @@
-	<h1>About</h1>
-	<h5>
-		Just tasted Profiteroles so creamy-chocolaty you'd love to dive into it?
-	</h5>
-	<h5>
-		Found Gnocchi so tender and topped with home-made mediterranean tomato sauce that your heart leaps for joy?
-	</h5>
-	<h5>
-		 Your mouth waters when only seeing the sign of the Mexican Restaurant with the incredibly tasty Burrito?
-	</h5>
-	<h4> <br>
-		Treasure the food you love on Food Treasure! 
-		</br>
-		<br>
-		<%= link_to "Sign up to treasure!", new_user_registration_path, class: "btn btn-primary btn-large"  %>
-		</br>
-	</h4>
+	<% if user_signed_in? %>
+		<h1>About</h1>
+		<h5>
+			Just tasted Profiteroles so creamy-chocolaty you'd love to dive into it?
+		</h5>
+		<h5>
+			Found Gnocchi so tender and topped with home-made mediterranean tomato sauce that your heart leaps for joy?
+		</h5>
+		<h5>
+			 Your mouth waters when only seeing the sign of the Mexican Restaurant with the incredibly tasty Burrito?
+		</h5>
+		<h4> <br>
+			Treasure the food you love on Food Treasure! 
+			</br>
+			<br>
+			<%= link_to 'New Pin', new_pin_path %>
+			</br>
+		</h4>
+	<% else %>
+			<h1>About</h1>
+		<h5>
+			Just tasted Profiteroles so creamy-chocolaty you'd love to dive into it?
+		</h5>
+		<h5>
+			Found Gnocchi so tender and topped with home-made mediterranean tomato sauce that your heart leaps for joy?
+		</h5>
+		<h5>
+			 Your mouth waters when only seeing the sign of the Mexican Restaurant with the incredibly tasty Burrito?
+		</h5>
+		<h4> <br>
+			Treasure the food you love on Food Treasure! 
+			</br>
+			<br>
+			<%= link_to "Sign up to treasure!", new_user_registration_path, class: "btn btn-primary btn-large"  %>
+			</br>
+		</h4>
+	<% end %>
