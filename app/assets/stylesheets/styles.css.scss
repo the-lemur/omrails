@@ -15,6 +15,7 @@ $navbarLinkColorHover: #c9c5c5;
 /*$navbarBackgroundHighligh: white;
 $navbarBackground: gray;*/
 
+.well { color: #333333;}
 
 @import 'bootstrap';
 
@@ -22,7 +23,7 @@ body{
 	padding-top: 60px;
 }
 
-.home { color: $grayDark;}
+.home { color: #333333;}
 /* Oder cec6c6 8e8d8d bfbfbf e0c0e0*/
 
 @import 'bootstrap-responsive';
