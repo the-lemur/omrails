@@ -1,37 +1,66 @@
 	<% if user_signed_in? %>
-		<h1>About</h1>
+		<h1> About Food Treasure </h1>
+		<br>
 		<h5>
 			Just tasted Profiteroles so creamy-chocolaty you'd love to dive into it?
+			<p>
+			--> This is for Nicole and Juli, they would enjoy it just like me!!
+			</p>
 		</h5>
 		<h5>
 			Found Gnocchi so tender and topped with home-made mediterranean tomato sauce that your heart leaps for joy?
+			<p>
+			--> I'm sure Stefan would be a fan of it too!
+			</p>
 		</h5>
 		<h5>
 			 Your mouth waters when only seeing the sign of the Mexican Restaurant with the incredibly tasty Burrito?
+			 <p>
+			--> I bet my collegues from work will try the most spicy one!
+			</p>
 		</h5>
-		<h4> <br>
-			Treasure the food you love on Food Treasure! 
-			</br>
+		<h4> 
 			<br>
-			<%= link_to 'New Pin', new_pin_path %>
+			Treasure and recommend the food you love! 
 			</br>
+			<p>
+			<br>
+			<%= link_to 'New Pin', new_pin_path, class: "btn btn-primary btn-large" %>
+			</br>
+			</p>
 		</h4>
+		<br>
+		<h7> PS: It's all in English because the basis I used for this App is in English only ;)
+		</h7>		
+
 	<% else %>
-			<h1>About</h1>
+		<h1> About Food Treasure </h1>
+		<br>
 		<h5>
 			Just tasted Profiteroles so creamy-chocolaty you'd love to dive into it?
+			<p>
+			--> This is for Nicole and Juli, they would enjoy it just like me!!
+			</p>
 		</h5>
 		<h5>
 			Found Gnocchi so tender and topped with home-made mediterranean tomato sauce that your heart leaps for joy?
+			<p>
+			--> I'm sure Stefan would be a fan of it too!
+			</p>
 		</h5>
 		<h5>
 			 Your mouth waters when only seeing the sign of the Mexican Restaurant with the incredibly tasty Burrito?
+			 <p>
+			--> I bet my collegues from work will try the most spicy one!
+			</p>
 		</h5>
 		<h4> <br>
-			Treasure the food you love on Food Treasure! 
+			Treasure and recommend the food you love! 
 			</br>
+			<p>
 			<br>
 			<%= link_to "Sign up to treasure!", new_user_registration_path, class: "btn btn-primary btn-large"  %>
 			</br>
+			</p>
 		</h4>
 	<% end %>
