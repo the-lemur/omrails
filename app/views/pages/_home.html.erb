@@ -1,12 +1,18 @@
 <% if user_signed_in? %>
 	<div class="hero-unit">
-	<h2>Welcome to Food Treasure!</h2>
+		<h2 class="textinbox">Welcome to Food Treasure!</h2>
+		<p>
+			<h3 class="textinbox">
+				Treasure and recommend the food you love
+			</h3>
+		</p>
+			<%= link_to 'New Pin', new_pin_path, class: "btn btn-primary btn-large" %>
 	</div>
 <% else %>
 	<div class="hero-unit">
-		<h1>Food Treasure</h1>
+		<h1 class="textinbox">Food Treasure</h1>
 		<p>
-		<h3>
+		<h3 class="textinbox">
 			A dish so delicious, yummy, om nom nom you’d love to
 			- dive into it and whoop of joy?
 			Treasure and recommend the food you love!
