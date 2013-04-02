@@ -36,4 +36,7 @@ Omrails::Application.configure do
   config.assets.debug = true
 
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  # ImageMagick is required for Paperclip to work
+  Paperclip.options[:command_path] = "/c/Program Files (x86)/ImageMagick-6.8.4-Q16/convert"
 end
