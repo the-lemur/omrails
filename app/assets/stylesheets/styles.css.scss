@@ -4,13 +4,14 @@ $baseFontFamily: Lato;
 $btnPrimaryBackground: purple;
 $navbarHeight: 45px;
 $bodyBackground: #282424;
-/*1e1a1a 282424 302b2b*/
+/*1e1a1a 282424 302b2b 666666*/
 $heroUnitBackground: #ddd4dd;
 $textColor: #d6bee0;
 $navbarLinkColor: #aaa2aa;
 $navbarBackground: #110f0f;
 $navbarBackgroundHighlight: #110f0f;
 $navbarLinkColorHover: #c9c5c5;
+/*$wellBackground: #d8d8d8;
 /*bcb1bc oder e0cee0 herounit
 /*$navbarBackgroundHighligh: white;
 $navbarBackground: gray;*/
@@ -68,8 +69,10 @@ h3.textinbox {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	box-shadow: 1px 1px 10px #444;
+	box-shadow: 1px 1px 5px #140c0c;
 	width: 214px;
+	background: #383434;
+	/*2d2a2a 353131 383434*/
 }
 
 .box img {
