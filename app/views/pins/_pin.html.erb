@@ -5,12 +5,16 @@
 	</p>
 	<p>
 		<strong>
-			Posted by <%= pin.user.name %>
+		City 
 		</strong>
-	</p>
+		<%= pin.City %>
 	<p>
-		Created at <%= pin.created_at %>
+		<strong>
+			Posted by
+		</strong>
+			<%= pin.user.name %>
 	</p>
+	
 	<% if current_user == pin.user %>
 		<p>
 		<%= link_to 'Edit', edit_pin_path(pin) %>
