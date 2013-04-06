@@ -6,7 +6,7 @@
   	<%= f.input :image, label: "Upload an image" %>
     <%= f.input :description, placeholder: 'What did you eat? How was the foodexperience? In which restaurant/location?', as: :text, input_html: { rows: "3"} %>
     <%= f.input :City, placeholder: 'Where do you get it?', as: :text, input_html: { rows: "1"} %>
-    <%= f.input :Category, :collection => [["pure sweetness", "pure sweetness"], ["hot & spicy", "hot & spicy"], ["local speciality", "local speciality"], ["light & fresh", "light & fresh"], ["exotic", "exotic"], ["absolutely extraordinary", "absolutely extraordinary"]], as: :radio %>
+    <%= f.input :Category, :collection => [["pure sweetness", "pure sweetness"], ["hot & spicy", "hot & spicy"], ["light & fresh", "light & fresh"], ["exotic", "exotic"], ["local speciality", "local speciality"], ["solid and classic", "solid and classic"], ["absolutely extraordinary", "absolutely extraordinary"]], as: :radio %>
 
   <div class="form-actions">
     <%= f.button :submit, class: "btn btn-primary" %>
