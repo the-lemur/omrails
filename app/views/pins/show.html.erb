@@ -6,13 +6,22 @@
 			  <%= @pin.description %>
 			</p>
 			<p>
+				<strong>
+				City
+				</strong>
 			  <%= @pin.City %>
 			</p>
 			<p>
+				<strong>
+				Category
+				</strong>
 				<%= @pin.Category %>
 			</p>
 			<p>
-			  <%= @pin.user.name %>
+				<strong>
+				Posted by
+				</strong>
+			  	<%= link_to @pin.user.name, @pin.user %>
 			</p>
 			<% if current_user == @pin.user %>
 			<%= link_to 'Edit', edit_pin_path(@pin) %> |
