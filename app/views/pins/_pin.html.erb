@@ -18,7 +18,7 @@
 		<strong>
 			Posted by
 		</strong>
-			<%= pin.user.name %>
+			<%= link_to pin.user.name, pin.user %>
 	</p>
 	
 	<% if current_user == pin.user %>
