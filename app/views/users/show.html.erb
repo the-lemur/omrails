@@ -1,5 +1,19 @@
 <h1><%= @user.name %></h1>
 
+<% if @user.image? %>
+<%= image_tag @user.image(:small) %>
+<% else %>
+Currently no profile picture
+<% end %>
+
+<p>
+
+<% if @user == current_user %>
+<%= link_to 'Change it?', edit_user_registration_path(:current) %>
+<% end %>
+
+<p>
+
 <div id="pins">
 	<%= render @pins %>
 </div>
